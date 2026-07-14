@@ -37,4 +37,4 @@ The spec does not describe where a button sits, what colour it is, or what icon 
 
 Duplicating visual detail in specs creates a maintenance burden. Every small design change would require two edits, and specs would drift out of date quickly. Keeping Figma authoritative for visuals and specs authoritative for behaviour lets each artefact stay tight and current.
 
-The tradeoff is that reading a spec alone is not enough to build a feature. Read the spec for behaviour, then open Figma for the visuals. Both are linked from every dev ticket.
+The tradeoff is that reading a spec alone is not enough to build a feature. Read the spec for behaviour, then open Figma for the visuals. Both should be linked from every dev ticket in Monday.
