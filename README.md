@@ -12,4 +12,4 @@ Read these before raising a change, opening a ticket, or asking why something is
 
 ## The one-line version
 
-Design ideation and signoff happen in columns 1 to 6. That work is then translated into granular dev tickets which move through columns 7 to 13. Anything that changes after a ticket enters column 4 needs a change request. Bugs go through the bug report form, never chat.
+Design ideation and signoff happen in columns 1 to 6. That work is then translated into granular dev tickets which move through columns 7 to 13. Anything that changes after a ticket reaches Design Done needs a change request. Bugs go through the bug report form, never chat.

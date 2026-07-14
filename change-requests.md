@@ -1,8 +1,8 @@
 # Change requests
 
-A change request is any change to a feature after column 6, "designs are frozen and dev tickets have been created". This covers design tweaks, spec corrections, dev-initiated changes, and bugs.
+A change request is any change to a feature after column 6, Design Done. This covers design tweaks, spec corrections, dev-initiated changes, and bugs.
 
-Adjustments made during columns 4 and 5 (specs pending, create dev tickets) do not need a change request. That is the point of those columns: BA and PM are writing specs against the design, and small design adjustments to keep the two in sync are expected. Once the design is frozen at column 6, any further change needs a ticket.
+Adjustments made during columns 4 and 5 (Specs Pending, Create Dev Tickets) do not need a change request. That is the point of those columns: BA and PM are writing specs against the design, and small design adjustments to keep the two in sync are expected. Once the ticket reaches Design Done, any further change needs a change request.
 
 Every change request needs a ticket. Discussion in chat does not count as a request and will not be picked up by the dev team.
 
@@ -12,7 +12,7 @@ Bugs go through the bug report form. Bugs raised in chat will be ignored. This i
 
 ## Design changes after freeze
 
-Once designs are frozen at column 6, the developer-facing Figma is the reference for dev. Do not edit it directly.
+Once a ticket reaches Design Done, the developer-facing Figma is the reference for dev. Do not edit it directly.
 
 If a designer wants to change something after freeze, the flow is:
 
