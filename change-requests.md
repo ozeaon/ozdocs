@@ -8,7 +8,7 @@ Every change request needs a ticket. Discussion in chat does not count as a requ
 
 ## Bugs
 
-Bugs go through the bug report form. Bugs raised in chat will be ignored. This is not a courtesy rule, it is how the dev team keeps the queue coherent. If a bug is urgent, mark it Critical on the form.
+Bugs go through the [bug report form](https://docs.google.com/forms/d/e/1FAIpQLSc3XCR9CQah3jCu-Uw6a-htuVCTXGMmMmYtrG9QQacyI_EhDQ/viewform). Bugs raised in chat will be ignored. This is not a courtesy rule, it is how the dev team keeps the queue coherent. If a bug is urgent, mark it Critical on the form.
 
 ## Design changes after freeze
 
