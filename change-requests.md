@@ -33,6 +33,17 @@ If a designer wants to change something after freeze, the flow is:
 
 This applies to every change, including ones that feel mechanical. Correcting an avatar component, adjusting a card height, swapping an icon: these all go through the flow above. The developer-facing Figma does not get edited ad-hoc. If it is worth changing, it is worth a ticket.
 
+### Small design changes
+
+Worked example, swapping an icon in the top navigation bar:
+
+1. Designer makes the change in the playground and attaches a screenshot or link to the new version on the ticket.
+2. BA reviews and marks the ticket as either **Needs spec update** or **No spec update needed**.
+3. BA sign-off. Ticket moves to Ready for Dev.
+4. PM sign-off. PM assigns the dev and tags the Designer to permit the developer-facing Figma update.
+5. Designer updates the developer-facing Figma.
+6. Dev delivers to prod.
+
 ## Dev-initiated changes
 
 Two flavours, depending on whether the dev has already made the change or is blocked by a spec/design mismatch.
