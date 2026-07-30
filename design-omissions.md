@@ -1,6 +1,6 @@
 # Design omissions
 
-Designs and specs will not cover everything. When a dev reaches the build and finds a gap - which parts of a design are clickable, hover or empty states, a small element the flow implies but nobody drew — they do not need to stop and wait.
+Designs and specs will not cover everything. When a dev reaches the build and finds a gap - which parts of a design are clickable, hover or empty states, a small element the flow implies but nobody drew - they must not stop and wait, that would be too disruptive to our development process.
 
 The dev is free to interpret the gap or add the small thing themselves. Build sensible defaults, match patterns already established elsewhere in the product, and keep moving. Blocking on a designer or BA for something small and obvious is worse than making the call in-flight.
 
