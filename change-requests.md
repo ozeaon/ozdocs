@@ -82,7 +82,7 @@ Once a ticket reaches Design Done, the developer-facing Figma is the reference f
 
 1. Designer explores the change in a playground or draft file. The developer-facing Figma is not touched. Devs and BA can view the playground and give implementation feedback.
 2. BA reviews and marks the ticket as either **Needs spec update** or **No spec update needed**. If the spec needs updating, BA updates it before moving on.
-3. BA sign-off. BA moves the ticket to Create Dev Tickets and tags the Designer to permit the developer-facing Figma update.
+3. BA and PM sign-off. BA moves the ticket to Create Dev Tickets and tags the Designer to permit the developer-facing Figma update.
 4. Designer updates the developer-facing Figma to match the signed-off direction.
 5. Dev delivers to prod.
 
