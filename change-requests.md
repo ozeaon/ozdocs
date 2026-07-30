@@ -18,41 +18,103 @@ The [bug report form](https://docs.google.com/forms/d/e/1FAIpQLSc3XCR9CQah3jCu-U
 
 Bugs raised in dev or design chat will be ignored. This is not a courtesy rule, it is how the dev team keeps the queue coherent.
 
-## Design changes after freeze
+## The flow
 
-Once a ticket reaches Design Done, the developer-facing Figma is the reference for dev. Do not edit it directly.
+Every change request moves through the same six steps. No exceptions.
 
-If a designer wants to change something after freeze, the flow is:
+### 1. Log
 
-1. Ideation in a playground or draft file. The designer explores the change without touching the developer-facing Figma. Devs can be invited to view the playground for feedback.
-2. Signoff on the direction with Joseph.
-3. Change request ticket, assigned to BA and Designer.
-4. BA updates the spec if the change affects function or logic. If the change is purely visual and the spec already covers behaviour, the BA notes this on the ticket.
+Every change request is logged as a ticket in the **Change Requests** column on the Monday Tasks board. The BA is the assignee on every change request. Anyone on the team may raise one.
+
+Each ticket must contain enough to understand:
+
+- what exactly should change;
+- why the change is needed and what value it provides.
+
+Where available, include:
+
+- links to the current specification;
+- links to the current design;
+- screenshots or examples of the current and desired state.
+
+### 2. Prioritise
+
+The person raising the change request assigns an initial priority.
+
+| Priority | Criteria |
+| --- | --- |
+| **Critical** | Production is broken or users are blocked from completing a core use case. |
+| **High** | The team is blocked or there is a significant risk of delaying development. |
+| **Medium** | Affects the agreed scope, but no one is currently blocked. |
+| **Low** | Improvement, enhancement, or new idea. Nothing is broken and no work is blocked. |
+
+Critical and High skip the Decide step and move directly to Analyse and Route. Same-day turnaround is the default for both.
+
+### 3. Analyse
+
+BA owns this step and pulls in the PM, Designer, developers, QA, or other stakeholders as needed. The output is a short analysis attached to the ticket, covering:
+
+- **Cost**: estimated Design, Development, and QA effort. Estimates come from the people doing the work, not from the BA alone.
+- **Value**: the outcome if we do it, and the cost if we do not.
+- **Impact**: affected spec, Figma, live functionality, and any tickets already in progress.
+- **Recommendation**: the BA's recommended course of action.
+
+For Critical and High requests, the BA focuses only on identifying impact and agreeing on the fastest viable solution. Skip unnecessary analysis.
+
+### 4. Decide
+
+Medium and Low change requests need a decision from Joseph before they proceed. Joseph reviews the analysis and picks one of four outcomes:
+
+- **Approved**: proceed to Route.
+- **On Hold**: goes to the backlog with a reason and a review date. An item without a review date should be treated as rejected, not on hold.
+- **Rejected**: the ticket is archived with a reason. The reason should be clear enough that the same request does not resurface repeatedly.
+- **Needs More Information**: returned to BA with additional questions.
+
+Critical and High requests skip this step.
+
+### 5. Route
+
+The next steps depend on the type of change.
+
+#### Design update or design fix
+
+Once a ticket reaches Design Done, the developer-facing Figma is the reference for dev. Do not edit it directly. The flow for any change after freeze:
+
+1. Designer explores the change in a playground or draft file. The developer-facing Figma is not touched. Devs, BA, and PM can view the playground and give implementation feedback.
+2. BA reviews and marks the ticket as either **Needs spec update** or **No spec update needed**. If the spec needs updating, BA updates it before moving on.
+3. BA sign-off. Ticket moves to Ready for Dev.
+4. PM sign-off. PM assigns the dev and tags the Designer to permit the developer-facing Figma update.
 5. Designer updates the developer-facing Figma to match the signed-off direction.
-6. Ticket moves to Ready for Dev only once spec and design are aligned.
+6. Dev delivers to prod.
 
 This applies to every change, including ones that feel mechanical. Correcting an avatar component, adjusting a card height, swapping an icon: these all go through the flow above. The developer-facing Figma does not get edited ad-hoc. If it is worth changing, it is worth a ticket.
 
-### Small design changes
+#### Specification update
 
-Worked example, swapping an icon in the top navigation bar:
+1. BA updates the specification.
+2. If the change affects the user interface or behaviour visible to users, the Designer updates Figma to match.
+3. If code changes are required, the ticket moves to Ready for Dev.
+4. Notify the team if the change may affect work already in progress.
 
-1. Designer makes the change in the playground and attaches a screenshot or link to the new version on the ticket.
-2. BA reviews and marks the ticket as either **Needs spec update** or **No spec update needed**.
-3. BA sign-off. Ticket moves to Ready for Dev.
-4. PM sign-off. PM assigns the dev and tags the Designer to permit the developer-facing Figma update.
-5. Designer updates the developer-facing Figma.
-6. Dev delivers to prod.
-
-## Dev-initiated changes
+#### Dev-initiated changes
 
 Two flavours, depending on whether the dev has already made the change or is blocked by a spec/design mismatch.
 
-Dev-notified. The change is small, obvious, and the dev has already made it. They open a change request ticket to record it, BA and Designer update the spec and design to match, no discussion needed. The ticket exists so the docs stay authoritative, not to relitigate the call.
+**Dev-notified**. The change is small, obvious, and the dev has already made it. They open a change request ticket to record it, BA and Designer update the spec and design to match, no discussion needed. The ticket exists so the docs stay authoritative, not to relitigate the call.
 
-Dev-blocked. The dev spots a spec/design mismatch that stops them from implementing. They open a change request ticket and flag it as blocking. BA owns the decision, syncs with Designer if needed, and unblocks the dev. Same-day turnaround is the default.
+**Dev-blocked**. The dev spots a spec/design mismatch that stops them from implementing. They open a change request ticket and flag it as Critical. BA owns the decision, syncs with Designer if needed, and unblocks the dev. Same-day turnaround is the default.
 
 In both cases the ticket is the record. No silent edits to spec or design without a ticket, and no PR merged against the spec without a ticket to explain the divergence.
+
+#### New idea
+
+A new idea is not a change request against an existing feature. It is a candidate for the discovery flow described in [new-feature-process.md](new-feature-process.md). Close the change request ticket with a link to the discovery ticket once it exists.
+
+### 6. Apply and Close
+
+Dev tickets created from the change request continue through the standard delivery workflow in [kanban.md](kanban.md). If the change requires no code update, the ticket goes straight to Done.
+
+Any change that results in a code update must be logged in the [Change Registry](https://docs.google.com/spreadsheets/d/1LBRRCja_DsP0km7x8lVGHrjzRuzPdGNJzRv5Pw50w1o/edit?gid=1257745505#gid=1257745505).
 
 ## Post-delivery changes
 
