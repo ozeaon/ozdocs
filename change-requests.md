@@ -80,12 +80,11 @@ The next steps depend on the type of change.
 
 Once a ticket reaches Design Done, the developer-facing Figma is the reference for dev. Do not edit it directly. The flow for any change after freeze:
 
-1. Designer explores the change in a playground or draft file. The developer-facing Figma is not touched. Devs, BA, and PM can view the playground and give implementation feedback.
+1. Designer explores the change in a playground or draft file. The developer-facing Figma is not touched. Devs and BA can view the playground and give implementation feedback.
 2. BA reviews and marks the ticket as either **Needs spec update** or **No spec update needed**. If the spec needs updating, BA updates it before moving on.
-3. BA sign-off. Ticket moves to Ready for Dev.
-4. PM sign-off. PM assigns the dev and tags the Designer to permit the developer-facing Figma update.
-5. Designer updates the developer-facing Figma to match the signed-off direction.
-6. Dev delivers to prod.
+3. BA sign-off. BA moves the ticket to Create Dev Tickets and tags the Designer to permit the developer-facing Figma update.
+4. Designer updates the developer-facing Figma to match the signed-off direction.
+5. Dev delivers to prod.
 
 This applies to every change, including ones that feel mechanical. Correcting an avatar component, adjusting a card height, swapping an icon: these all go through the flow above. The developer-facing Figma does not get edited ad-hoc. If it is worth changing, it is worth a ticket.
 
@@ -98,9 +97,9 @@ This applies to every change, including ones that feel mechanical. Correcting an
 
 #### Dev-initiated changes
 
-Two flavours, depending on whether the dev has already made the change or is blocked by a spec/design mismatch.
+Two situations, depending on whether the dev has already filled a gap or is blocked by a spec/design mismatch.
 
-**Dev-notified**. The change is small, obvious, and the dev has already made it. They open a change request ticket to record it, BA and Designer update the spec and design to match, no discussion needed. The ticket exists so the docs stay authoritative, not to relitigate the call.
+**Dev-notified**. For small gaps the dev filled in-flight — missing states, unspecified affordances, obvious micro-interactions — follow [design-omissions.md](design-omissions.md).
 
 **Dev-blocked**. The dev spots a spec/design mismatch that stops them from implementing. They open a change request ticket and flag it as Critical. BA owns the decision, syncs with Designer if needed, and unblocks the dev. Same-day turnaround is the default.
 
