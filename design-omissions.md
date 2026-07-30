@@ -6,7 +6,7 @@ The dev is free to interpret the gap or add the small thing themselves. Build se
 
 Once the change is in, BA and Designer are informed and update the developer-facing Figma and spec so the docs stay authoritative.
 
-Unless the dev's implementation is a catastrophically breaking mistake, it is accepted and can be iterated on further down the line. The default is to trust the call, ship it, and refine later through the normal change request flow — not to unwind the work.
+Unless the dev's implementation is a catastrophically breaking mistake, it is accepted and can be iterated on further down the line. The default is to trust the call, ship it, and refine later through the normal change request flow - not to unwind the work.
 
 ## What counts as an omission
 

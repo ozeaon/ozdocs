@@ -1,6 +1,6 @@
 # Change requests
 
-A change request is any change to a feature after column 6, Design Done. This covers design tweaks, spec corrections, dev-initiated changes, and bugs. The same flow applies regardless of who triggers it — designer, developer, Joseph, QA, or BA.
+A change request is any change to a feature after column 6, Design Done. This covers design tweaks, spec corrections, dev-initiated changes, and bugs. The same flow applies regardless of who triggers it - designer, developer, Joseph, QA, or BA.
 
 Adjustments made during columns 4 and 5 (Specs Pending, Create Dev Tickets) do not need a change request. That is the point of those columns: BA and PM are writing specs against the design, and small design adjustments to keep the two in sync are expected. Once the ticket reaches Design Done, any further change needs a change request.
 
@@ -99,7 +99,7 @@ This applies to every change, including ones that feel mechanical. Correcting an
 
 Two situations, depending on whether the dev has already filled a gap or is blocked by a spec/design mismatch.
 
-**Dev-notified**. For small gaps the dev filled in-flight — missing states, unspecified affordances, obvious micro-interactions — follow [design-omissions.md](design-omissions.md).
+**Design omission**. For small gaps the dev filled in-flight - missing states, unspecified affordances, obvious micro-interactions - follow [design-omissions.md](design-omissions.md).
 
 **Dev-blocked**. The dev spots a spec/design mismatch that stops them from implementing. They open a change request ticket and flag it as Critical. BA owns the decision, syncs with Designer if needed, and unblocks the dev. Same-day turnaround is the default.
 
