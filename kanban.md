@@ -21,8 +21,14 @@ The spec comes first. BA and PM write it, and the designer designs against it.
 
 7. Ready for Dev - developer ticket backlog, whether based on designs or not. This is where the dev tickets created in column 5 land, alongside any purely technical work.
 8. Dev in Progress - developer building the ticket.
-9. Code Review + QA - PR created, code reviewed, and QA'd on the PR's own preview environment, then merged. The ticket stays here for all of it, so review and QA are tracked on the ticket rather than as separate columns. See [preview-environments.md](preview-environments.md).
-10. Done - reviewed, QA accepted, and merged.
+9. Code Review + QA - PR created, code reviewed, then QA'd on the PR's own preview environment, then merged. The ticket stays here for all of it, so review and QA are tracked on the ticket rather than as separate columns. See [preview-environments.md](preview-environments.md).
+10. Done - merged into main, which deploys to production.
+
+Three rules keep column 9 legible, since one column is covering three different waits:
+
+- **Review before QA.** Any change that comes out of review rebuilds the preview and voids a QA pass, so QA starts once the PR is approved.
+- **A QA failure moves the ticket back to Dev in Progress.** Otherwise it sits in a column QA thinks they own while it is actually the developer's problem, and nobody picks it up.
+- **The assignee is whoever the ticket is waiting on** - developer, then reviewer, then QA. With review and QA sharing a column, the assignee is the only thing that says which of the three it is stuck on.
 
 ## Getting from design to dev
 

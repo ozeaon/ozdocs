@@ -1,8 +1,8 @@
 # Preview environments
 
-QA happens on the preview environment for the branch, not on staging.
+QA happens on the pull request's own preview environment.
 
-Every pull request into `develop` gets its own deployed copy of the site with its own database. That copy is where the ticket is reviewed and QA'd. Only once it passes does the work merge. Staging is no longer the QA gate: it is where merged work lands, so by the time a change reaches it, it has already been accepted.
+Every pull request into `main` gets its own deployed copy of the site with its own database. That copy is where the ticket is reviewed and QA'd. Only once it passes does the work merge, and merging deploys to production - so the preview is the last point at which a change can be caught before users see it.
 
 Ideally a ticket has exactly one pull request, so every ticket has a preview to look at and every preview answers a single ticket. Some pull requests have no ticket behind them - refactors, dependency bumps, infrastructure, tidying. Those still get a preview, but they merge on code review alone and do not need QA approval. That is fine and expected. QA approval gates the tickets, not every single PR.
 
@@ -32,7 +32,7 @@ Each preview is seeded with the same fixture: twenty accounts, three organisatio
 ## What this changes for QA
 
 - Test the ticket on its own preview and record the result on the Monday ticket before it merges. A failure goes back to the developer on the same pull request.
-- Do not wait for a staging deployment to start QA. The work is testable as soon as the pull request is open.
+- Do not wait for anything else to start QA. The work is testable as soon as the pull request is open.
 - The preview is destroyed when the pull request merges or closes. Capture screenshots for anything that needs to live on the ticket.
 - If the developer pushes a fix after you have tested, the code updates but the sample data does not. Data-related fixes need the pull request closed and reopened to reseed — ask the developer to confirm they have done that before retesting.
 
