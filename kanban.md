@@ -4,9 +4,9 @@ Work flows through 10 phases on the OZEAON Tasks board on Monday.
 
 The board is split into two tracks. Columns 1 to 6 are the design track, run by BA, Designer, and PM. Columns 7 to 10 are the dev track, run by Engineering and QA.
 
-## Design track
+<img width="2234" height="612" alt="image" src="https://github.com/user-attachments/assets/57dac624-0b47-400a-aa6f-32d73e83f5cd" />
 
-<img width="1650" height="498" alt="image" src="https://github.com/user-attachments/assets/71df42ad-f98d-4853-8547-3241ea30e9d7" />
+## Design track
 
 1. Ready for Design - upcoming next for designers. Written as a feature-level brief, for example "User Dashboard and Settings" or "Educational Resources".
 2. Design in Progress - designer working in Figma.
@@ -16,8 +16,6 @@ The board is split into two tracks. Columns 1 to 6 are the design track, run by 
 6. Design Done - designs are frozen and the dev work exists on the board. Where the design ticket was broken down, it is closed as delivered here and goes no further.
 
 ## Dev track
-
-<img width="1649" height="691" alt="image" src="https://github.com/user-attachments/assets/9ac3766a-3dd6-4672-805e-bd418666a29f" />
 
 7. Ready for Dev - developer ticket backlog, whether based on designs or not. This is where the dev tickets created in column 5 land, alongside any purely technical work.
 8. Dev in Progress - developer building the ticket.
