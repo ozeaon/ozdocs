@@ -4,7 +4,7 @@ Work flows through 10 phases on the OZEAON Tasks board on Monday.
 
 The board is split into two tracks. Columns 1 to 6 are the design track, run by BA, Designer, and PM. Columns 7 to 10 are the dev track, run by Engineering and QA.
 
-<img width="2234" height="612" alt="image" src="https://github.com/user-attachments/assets/57dac624-0b47-400a-aa6f-32d73e83f5cd" />
+<img width="2207" height="672" alt="image" src="https://github.com/user-attachments/assets/9a59a6d5-74c0-4e34-90de-70596d1dbffc" />
 
 ## Design track
 
