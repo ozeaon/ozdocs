@@ -32,7 +32,7 @@ Each preview is seeded with the same fixture: twenty accounts, three organisatio
 ## What this changes for QA
 
 - Test the ticket on its own preview and record the result on the Monday ticket before it merges. A failure goes back to the developer on the same pull request.
-- Do not wait for anything else to start QA. The work is testable as soon as the pull request is open.
+- QA starts once code review has approved the pull request. The preview is live before that, but anything that comes out of review rebuilds it and voids an earlier pass.
 - The preview is destroyed when the pull request merges or closes. Capture screenshots for anything that needs to live on the ticket.
 - If the developer pushes a fix after you have tested, the code updates but the sample data does not. Data-related fixes need the pull request closed and reopened to reseed — ask the developer to confirm they have done that before retesting.
 
