@@ -13,4 +13,4 @@ Read these before raising a change, opening a ticket, or asking why something is
 
 ## The one-line version
 
-Design ideation and signoff happen in columns 1 to 6. It then enters the dev track at column 7, broken into granular dev tickets if it covers an area of the product, or as it stands if it is already a single piece of work. Anything that changes after a ticket reaches Design Done needs a change request. Internal feedback goes to BA/PM, who triage before anything reaches dev or design. External bugs come in via the bug report form.
+Spec writing, design ideation, and signoff happen in columns 1 to 6, spec first. It then enters the dev track at column 7, broken into granular dev tickets if it covers an area of the product, or as it stands if it is already a single piece of work. Anything that changes after a ticket reaches Design Done needs a change request. Internal feedback goes to BA/PM, who triage before anything reaches dev or design. External bugs come in via the bug report form.

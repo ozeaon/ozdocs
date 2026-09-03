@@ -16,7 +16,7 @@ The URL is posted as a comment on the pull request in GitHub, and takes the form
 https://pr-123-app-ozeaon.joseph-400.workers.dev
 ```
 
-The number is the pull request number. The developer links the pull request from the Monday ticket when they move it into Review + QA, so the ticket is the starting point either way.
+The number is the pull request number. The developer links the pull request from the Monday ticket when they move it into Code Review + QA, so the ticket is the starting point either way.
 
 It takes roughly seven minutes from the pull request opening for the URL to work.
 

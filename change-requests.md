@@ -2,7 +2,7 @@
 
 A change request is any change to a feature after column 6, Design Done. This covers design tweaks, spec corrections, dev-initiated changes, and bugs. The same flow applies regardless of who triggers it - designer, developer, Joseph, QA, or BA.
 
-Adjustments made during columns 4 and 5 (Specs Pending, Create Dev Tickets) do not need a change request. That is the point of those columns: BA and PM are writing specs against the design, and small design adjustments to keep the two in sync are expected. Once the ticket reaches Design Done, any further change needs a change request.
+Adjustments made anywhere in columns 1 to 5, before the design is frozen, do not need a change request. That is the point of the design track: the spec is written first and the design is built against it, so adjustments to either one to keep the two in sync are expected. Once the ticket reaches Design Done, any further change needs a change request.
 
 Every change request needs a ticket. Discussion in chat does not count as a request and will not be picked up by the dev team. BA owns the change request process end to end: intake, spec updates, coordination with Designer, and confirmation that spec and design are aligned before the ticket returns to Ready for Dev.
 
